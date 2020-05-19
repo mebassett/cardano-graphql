@@ -26,6 +26,7 @@ let
       nodejs
       pkgs.packages.cardano-graphql
       pkgs.packages.persistgraphql
+      pkgs.packages.hasura-cli
     ];
 
     shellHook = ''

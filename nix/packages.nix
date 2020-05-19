@@ -67,4 +67,5 @@
     '';
   };
   persistgraphql = (pkgs.callPackage ./node-packages {}).persistgraphql;
+  hasura-cli = (pkgs.callPackage ./node-packages {}).hasura-cli;
 }
