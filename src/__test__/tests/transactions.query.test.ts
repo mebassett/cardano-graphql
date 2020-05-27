@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { tx05ad8b, txe68043 } from '../data_assertions'
+import { tx49b7d1, tx05ad8b, txe68043 } from '../data_assertions'
 import { TestClient } from '../TestClient'
 import { loadExampleQueryNode } from '../../util'
 
@@ -14,11 +14,16 @@ export function transactionTests (createClient: () => Promise<TestClient>) {
     it('Returns transactions by hashes', async () => {
       const result = await client.query({
         query: await loadExampleQueryNode('transactions', 'transactionsByHashesOrderByFee'),
-        variables: { hashes: [txe68043.basic.hash, tx05ad8b.basic.hash] }
+        variables: { hashes: [tx49b7d1.basic.hash] }
       })
-      expect(result.data.transactions.length).toBe(2)
+      expect(result.data.transactions.length).toBe(1)
       expect(result.data.transactions[0].inputs[0].index).toBe(0)
+      expect(result.data.transactions[0].inputs[1].index).toBe(1)
+      expect(result.data.transactions[0].inputs[2].index).toBe(2)
+      expect(result.data.transactions[0].inputs[3].index).toBe(3)
+      expect(result.data.transactions[0].inputs[4].index).toBe(4)
       expect(result.data.transactions[0].outputs[0].index).toBe(0)
+      expect(result.data.transactions[0].outputs[1].index).toBe(1)
       expect(result.data).toMatchSnapshot()
     })
 

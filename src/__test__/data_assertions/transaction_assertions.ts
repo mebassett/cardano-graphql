@@ -135,3 +135,44 @@ export const tx05ad8b = {
     }
   }
 }
+
+export const tx49b7d1 = {
+  basic: {
+    block: {
+      number: 4207825
+    },
+    fee: 196823,
+    hash: '49b7d179816332d9af42106a4f48d782ea3bf057175b282cd0f28ae0b129dff7',
+    includedAt: '2020-05-25T10:15:51',
+    inputs: [{
+      index: 0,
+      address: 'DdzFFzCqrhsh21xAqD2F6vK8Y5632EwfMNmoQYPcdCeXtSSi4YzDx8SukmE6RNq6EyhSr7QNyTnBEWhbFvU5YD95FGVVduBfgk1MgwiJ',
+      value: 159680000
+    }, {
+      index: 1,
+      address: 'DdzFFzCqrhsq5NXn5qFQ21PPF6K3yMWbBoHVTJvu6iJJR9Jc6K3Uux5xrFEu96C8h6Yny4rEicUpCFcCyn3pXqHTnTVTpQ1pW37v6eW2',
+      value: 319360000
+    }, {
+      index: 2,
+      address: 'DdzFFzCqrhtD7qTvEtcKhmgRtXh8oCoADNpE4Xg78Std7VFmU3H8FKAafAukxGFRsn2hHN5ajMjiugRZ4PTtD8dqsEcnzQiU5jYNrbJo',
+      value: 180029500
+    }, {
+      index: 3,
+      address: 'DdzFFzCqrhsjwYW5cqXXEWVQ6gGYPzjnjVw4k3SHdVJPBWZMVM6LDwhDS6DA4JvbxZS74K6pFgTAnZToPhmBmQYwcUkbCUyAycsmBsAZ',
+      value: 1369087013484
+    }
+    ],
+    outputs: [
+      {
+        address: 'Ae2tdPwUPEZBAL6UEhbUkaDfkBNxEGkqK67P784iECfSAmShPPQ5pjBnJf3',
+        value: 10002000000
+      },
+      {
+        address: 'DdzFFzCqrhsvhTc6856r1SBpFFstJzqtCcrnuWYNbdJqSGzaLc3WynGBVkiJcyqtgbzXiYC6p13ijPaMTb7JYoZinFD7onfe8nW7TsiH',
+        value: 1359743886161
+      }
+    ],
+    size: 313,
+    totalOutput: '1369745886161'
+  }
+}
